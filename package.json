@@ -4,10 +4,7 @@
   "description": "Mi lab para que me acepten el proyecto xd ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server",
-    "build": "webpack",
-    "dist": "electron-builder"
+    "lint": "eslint src/**/*.{js,jsx,ts,tsx}"
   },
   "author": "Andrea",
   "license": "ISC",
@@ -16,19 +13,23 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
-    
     "file-loader": "^6.0.0",
     "react": "^16.13.1",
     "react-alert": "^7.0.3",
     "react-dom": "^16.13.1",
-    "webpack": "^4.43.0",
+    "webpack": "^5.72.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^4.9.0"
   },
   "devDependencies": {
     "electron": "^18.1.0",
-    "electron-builder": "^23.0.3"
-    
+    "electron-builder": "^23.0.3",
+    "eslint": "^8.15.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.29.4"
   },
   "win": {
     "target": "NSIS"
